@@ -91,6 +91,10 @@ header .name {
 
 /* Boxes */
 
+.grid p {
+    font-size: 15px;
+    text-align: left;
+}
 
 .grid {
     display: grid;
@@ -105,9 +109,14 @@ header .name {
     width: 225px;
 }
 
+#android {
+    height: 350px;
+    width:  225px;
+}
+
 
 .grid div {
-    padding: 2em;
+
 }
 
 .grid > div:nth-child(odd) {
@@ -116,6 +125,7 @@ header .name {
     border-left: black solid 1px;
     border-bottom: black solid 1px;
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.075);
+    padding: 2.5em 0px 2.5em 2.5em;
 }
 
 .grid > div:nth-child(even) {
@@ -124,6 +134,7 @@ header .name {
     border-right: black solid 1px;
     border-bottom: black solid 1px;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.075);
+    padding: 2.5em 2.5em 2.5em 0px;
 }
 
 
@@ -134,10 +145,19 @@ header .name {
 
 #code li {
     list-style: none;
-    padding: 0 8px 0 0px;
+    padding: 0 15px 0px 0px;
 }
 
 #code a {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.1);
+}
+
+#live {
+    color: rgba(0, 0, 0, 1);
+}
+
+#down {
+    color: rgba(0, 0, 0, .3);
+    pointer-events: none;
+    cursor: default;
 }
