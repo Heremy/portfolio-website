@@ -89,6 +89,47 @@ header .name {
     text-align: center;
 }
 
+/* Pop Out */
+
+.overlay {
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal {
+    width: 350px;
+    max-width: 500px;
+    height: 80px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+}
+
+.modal p {
+    padding-top: 15px;
+}
+
+.close {
+    padding: 2px;
+    top: 0;
+    right: 10px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+ 
 /* Boxes */
 
 .grid p {
@@ -114,10 +155,6 @@ header .name {
     width:  225px;
 }
 
-
-.grid div {
-
-}
 
 .grid > div:nth-child(odd) {
     background: white;
